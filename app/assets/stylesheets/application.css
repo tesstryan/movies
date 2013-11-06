@@ -12,7 +12,7 @@
  *= require_tree .
  */
 
-body { width: 960px; margin: 20px auto; font-family: "Helvetica Neue"; background: #CCC;}
+body { width: 960px; margin: 20px auto; font-family: "Arial"; background: #CCC;}
 
 table { border-collapse: collapse; width: 100%;}
 table th { border-bottom: solid 2px #333; font-size: 24px; }

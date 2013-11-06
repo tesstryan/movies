@@ -20,6 +20,13 @@
   <p><%= @director.bio %></p>
 </p>
 
-
+<p>
+<b>Movies Directed:</b>
+<ul>
+  <% movies = Movie.all.where("director_id = #{@director.id}") %>
+    <% movies.each do |movie| %>
+     <li> <%= movie.title %> </li>
+    <% end %>
+</ul>
 
 

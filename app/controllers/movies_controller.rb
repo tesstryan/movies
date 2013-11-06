@@ -6,6 +6,7 @@ class MoviesController < ApplicationController
 
   def show
     @movie = Movie.find_by(:id => params[:id])
+    @reviews = Review.where(movies_id: params[:id])
   end
 
   def new

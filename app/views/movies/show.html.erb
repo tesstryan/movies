@@ -12,3 +12,13 @@
 
 <% the_director = Director.find_by(id: @movie.director_id) %>
 <p>Directed By: <%= the_director.name %>, born <%= the_director.dob %></p>
+
+<h2>Reviews</h2>
+  <ul>
+    <% @reviews.each do |review| %>
+     <li>Comment: <%= review.review %></li>
+     <li>Rating Stars: <%= review.stars %> </li>
+     <% end %>
+  </ul>
+
+<%= link_to 'Directors Page', directors_url %> | <%= link_to 'Back to Movies Page', movies_url %>

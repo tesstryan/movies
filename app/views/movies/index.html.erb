@@ -1,6 +1,6 @@
 <h1>Movies</h1>
 
-<p><%= link_to 'Add a New Movie', new_movie_url %></p>
+<p><%= link_to 'Add a New Movie', new_movie_url %> | <%= link_to 'Directors Page', directors_url %> |  <%= link_to 'Add a movie review', new_review_url %></p>
 
 <table>
   <thead>
@@ -18,8 +18,8 @@
     <tr>
       <td><%= movie.title %></td>
       <td><%= movie.year %></td>
-  
-      <td><%= link_to 'Show', movie_url(movie) %></td>
+
+      <td><%= link_to 'Show Details', movie_url(movie) %></td>
       <td><%= link_to 'Edit', edit_movie_url(movie) %></td>
       <td><%= link_to 'Destroy', movie_url(movie), method: 'delete', data: { confirm: "Do you really want to delete this movie?" } %></td>
 

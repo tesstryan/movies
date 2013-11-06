@@ -1,0 +1,20 @@
+<h2>Movie Reviews</h2>
+
+  <table>
+  <thead>
+    <tr>
+      <th>Movie</th>
+      <th>Review</th>
+      <th>Star Rating</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <% @reviews.each do |review| %>
+    <tr>
+      <td> <%= review.movies_id %></td>
+      <td> <%= review.review %></td>
+      <td> <%= review.stars %></td>
+
+      <% end %>
